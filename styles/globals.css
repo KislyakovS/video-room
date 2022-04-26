@@ -12,4 +12,7 @@ html, body {
 :root {
     --container-width: 1240px;
     --container-gap: 15px;
+
+    --active-color: #fb8660;
+    --error-color: #f7716e;
 }
