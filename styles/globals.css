@@ -7,6 +7,8 @@
 html, body {
     margin: 0;
     padding: 0;
+
+    font-family: var(--font-family);
 }
 
 :root {
@@ -15,4 +17,6 @@ html, body {
 
     --active-color: #fb8660;
     --error-color: #f7716e;
+
+    --font-family: 'Nunito', sans-serif;
 }
