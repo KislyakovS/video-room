@@ -19,4 +19,6 @@ html, body {
     --error-color: #f7716e;
 
     --font-family: 'Nunito', sans-serif;
+
+    --border: 1px solid #e3e3e3;
 }

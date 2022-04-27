@@ -6,7 +6,7 @@
     font-size: 16px;
 
     background-color: #fff;
-    border: 1px solid #e3e3e3;
+    border: var(--border);
     border-radius: 14px;
 
     caret-color: var(--active-color);
