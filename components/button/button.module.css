@@ -1,0 +1,30 @@
+.button {
+    padding: 10px 20px;
+    margin: 0;
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: #fff;
+
+    background-color: var(--active-color);
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: filter var(--transition-time) var(--transition-timing);
+}
+
+.button:hover,
+.button:focus-visible {
+    filter: grayscale(10%);
+}
+
+.button:active {
+    filter: grayscale(15%);
+}
+
+.button:disabled {
+    filter: grayscale(85%);
+
+    cursor: not-allowed;
+}
