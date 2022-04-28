@@ -46,4 +46,5 @@
 
 .input:disabled + .label .checked {
     background-color: #f2f2f2;
+    border-color: #f2f2f2;
 }

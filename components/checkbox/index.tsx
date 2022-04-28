@@ -8,11 +8,10 @@ import styles from './checkbox.module.css';
 type CheckboxElement = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
 interface CheckboxProps extends CheckboxElement {
     className?: string;
-    label: string;
     type?: never;
 }
 
-const Checkbox: FC<CheckboxProps> = ({ className, label, ...props }) => {
+const Checkbox: FC<CheckboxProps> = ({ className, children, ...props }) => {
     const id = useId();
 
     return (
@@ -20,7 +19,7 @@ const Checkbox: FC<CheckboxProps> = ({ className, label, ...props }) => {
             <input {...props} type="checkbox" className={styles.input} id={id} />
             <label className={clsx(styles.label, className)} htmlFor={id}>
                 <span className={styles.checked}><Check /></span>
-                <span>{label}</span>
+                <span>{children}</span>
             </label>
         </>
     )
