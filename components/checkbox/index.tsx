@@ -1,7 +1,7 @@
 import { useId, FC, DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
-import Check from './check.svg';
+import CheckIcon from './check.svg';
 
 import styles from './checkbox.module.css';
 
@@ -18,7 +18,7 @@ const Checkbox: FC<CheckboxProps> = ({ className, children, ...props }) => {
         <>
             <input {...props} type="checkbox" className={styles.input} id={id} />
             <label className={clsx(styles.label, className)} htmlFor={id}>
-                <span className={styles.checked}><Check /></span>
+                <span className={styles.checked}><CheckIcon /></span>
                 <span>{children}</span>
             </label>
         </>

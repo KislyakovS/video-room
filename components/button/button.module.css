@@ -14,8 +14,8 @@
     transition: filter var(--transition-time) var(--transition-timing);
 }
 
-.button:focus,
-.button:hover {
+.button:hover,
+.button:focus-visible {
     filter: grayscale(10%);
 }
 
