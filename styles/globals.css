@@ -5,6 +5,8 @@
 }
 
 html, body {
+    width: 100vw;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
 
@@ -24,4 +26,14 @@ html, body {
 
     --transition-time: .2s;
     --transition-timing: ease-in;
+}
+
+.form-create-room {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    width: 440px;
+
+    transform: translate(-50%, -50%);
 }

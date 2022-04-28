@@ -25,6 +25,7 @@ const InputPassword: FC<InputPasswordProps> = ({ className, ...props }) => {
         <div className={clsx(styles.wrapper, className)}>
             <Input {...props} className={styles.input} type={showPassword ? 'text' : 'password'} />
             <button
+                type='button'
                 className={styles.button}
                 onClick={onClickShowPassword}
                 aria-label={showPassword ? 'Show password' : 'Hide password'}

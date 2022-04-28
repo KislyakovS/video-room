@@ -1,9 +1,20 @@
-import type { NextPage } from 'next'
+import Head from 'next/head';
+import type { NextPage } from 'next';
+
+import { Header, Container, FormCreateRoom } from 'components';
 
 const Home: NextPage = () => {
-  return (
-    <h1>Hello Video Room</h1>
-  )
+    return (
+        <>
+            <Head>
+                <title>Video Room</title>
+            </Head>
+            <Container>
+                <Header />
+                <FormCreateRoom className='form-create-room' />
+            </Container>
+        </>
+    )
 }
 
-export default Home
+export default Home;
