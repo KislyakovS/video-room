@@ -1,9 +1,5 @@
 .button {
-    /* --size: 25px;
-
-    position: absolute;
-    top: 50%;
-    right: 10px; */
+    --size: 25px;
 
     display: flex;
     align-items: center;
@@ -14,7 +10,6 @@
 
     background-color: transparent;
     border: none;
-    /* transform: translateY(-45%); */
 
     cursor: pointer;
     transition: opacity var(--transition-time) var(--transition-timing);
