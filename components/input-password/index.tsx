@@ -2,9 +2,7 @@ import { useState, forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 're
 import clsx from 'clsx';
 
 import Input from '../input';
-
-import EyeIcon from './eye.svg';
-import EyeCloseIcon from './eye-close.svg';
+import ButtonIcon from '../button-icon';
 
 import styles from './input-password.module.css';
 
@@ -24,14 +22,13 @@ const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(({ classN
     return (
         <div className={clsx(styles.wrapper, className)}>
             <Input {...props} ref={ref} className={styles.input} type={showPassword ? 'text' : 'password'} />
-            <button
+            <ButtonIcon
                 type='button'
                 className={styles.button}
                 onClick={onClickShowPassword}
                 aria-label={showPassword ? 'Show password' : 'Hide password'}
-            >
-                {showPassword ? <EyeCloseIcon /> : <EyeIcon />}
-            </button>
+                icon={showPassword ? 'eyeClose' : 'eye'}
+            />
         </div>
     );
 });
