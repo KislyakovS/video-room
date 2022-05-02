@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import type { NextPage } from 'next';
 
-import { Header, Logo, Container, FormSearch, FormSendMessage, Input } from 'components';
+import { Header, Logo, Container, FormSearch, FormSendMessage, OnlineCounter } from 'components';
 
 const Room: NextPage = () => {
     const router = useRouter();
@@ -15,7 +15,8 @@ const Room: NextPage = () => {
             <Container>
                 <Header
                     leftSide={<Logo href='/' />}
-                    center={<FormSearch />}
+                    center={<FormSearch className='w-100' />}
+                    rightSide={<OnlineCounter count={10} />}
                 />
                 <main className="room-main">
                     <section>

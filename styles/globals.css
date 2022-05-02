@@ -47,9 +47,6 @@ html, body {
 }
 
 .room-main > section {
-    /* padding: 10px;
-    border: var(--border);
-    border-radius: var(--border-radius); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
