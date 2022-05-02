@@ -1,13 +1,21 @@
-import { FC } from 'react';
-
-import Logo from '../logo';
+import { FC, ReactNode } from 'react';
+import clsx from 'clsx';
 
 import styles from './header.module.css';
 
-const Header: FC = () => {
+interface HeaderProps {
+    className?: string;
+    leftSide?: ReactNode,
+    center?: ReactNode,
+    rightSide?: ReactNode,
+}
+
+const Header: FC<HeaderProps> = ({ className, leftSide, center, rightSide }) => {
     return (
-        <header className={styles.header}>
-            <Logo />
+        <header className={clsx(className, styles.header)}>
+            {leftSide}
+            {center}
+            {rightSide}
         </header>
     );
 };

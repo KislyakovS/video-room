@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 
-import { Header, Container, FormCreateRoom } from 'components';
+import { Header, Logo, Container, FormCreateRoom } from 'components';
 
 const Home: NextPage = () => {
     return (
@@ -10,8 +10,10 @@ const Home: NextPage = () => {
                 <title>Video Room</title>
             </Head>
             <Container>
-                <Header />
-                <FormCreateRoom className='form-create-room' />
+                <Header leftSide={<Logo />} />
+                <main>
+                    <FormCreateRoom className='form-create-room' />
+                </main>
             </Container>
         </>
     )
