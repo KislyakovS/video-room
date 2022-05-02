@@ -1,0 +1,16 @@
+.form {
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+
+    transform: translateY(-45%);
+}
