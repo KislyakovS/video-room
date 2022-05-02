@@ -8,7 +8,7 @@
 
     background-color: var(--active-color);
     border: none;
-    border-radius: 12px;
+    border-radius: var(--border-radius);
 
     cursor: pointer;
     transition: filter var(--transition-time) var(--transition-timing);

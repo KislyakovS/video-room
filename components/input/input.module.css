@@ -7,7 +7,7 @@
 
     background-color: #fff;
     border: var(--border);
-    border-radius: 14px;
+    border-radius: var(--border-radius);
 
     caret-color: var(--active-color);
 }
