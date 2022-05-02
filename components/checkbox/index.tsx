@@ -1,4 +1,4 @@
-import { useId, FC, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { forwardRef, useId, DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 import CheckIcon from './check.svg';
@@ -11,18 +11,20 @@ interface CheckboxProps extends CheckboxElement {
     type?: never;
 }
 
-const Checkbox: FC<CheckboxProps> = ({ className, children, ...props }) => {
+const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(({ className, children, ...props }, ref) => {
     const id = useId();
 
     return (
         <>
-            <input {...props} type="checkbox" className={styles.input} id={id} />
+            <input {...props} ref={ref} type="checkbox" className={styles.input} id={id} />
             <label className={clsx(styles.label, className)} htmlFor={id}>
                 <span className={styles.checked}><CheckIcon /></span>
                 <span>{children}</span>
             </label>
         </>
     )
-};
+});
+
+Checkbox.displayName = 'Checkbox';
 
 export default Checkbox;

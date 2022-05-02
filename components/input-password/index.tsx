@@ -1,4 +1,4 @@
-import { useState, FC, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { useState, forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 import Input from '../input';
@@ -14,7 +14,7 @@ interface InputPasswordProps extends InputElement {
     type?: never;
 }
 
-const InputPassword: FC<InputPasswordProps> = ({ className, ...props }) => {
+const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(({ className, ...props }, ref) => {
     const [showPassword, setShowPassword] = useState(false);
 
     const onClickShowPassword = () => {
@@ -23,7 +23,7 @@ const InputPassword: FC<InputPasswordProps> = ({ className, ...props }) => {
 
     return (
         <div className={clsx(styles.wrapper, className)}>
-            <Input {...props} className={styles.input} type={showPassword ? 'text' : 'password'} />
+            <Input {...props} ref={ref} className={styles.input} type={showPassword ? 'text' : 'password'} />
             <button
                 type='button'
                 className={styles.button}
@@ -34,6 +34,8 @@ const InputPassword: FC<InputPasswordProps> = ({ className, ...props }) => {
             </button>
         </div>
     );
-};
+});
+
+InputPassword.displayName = 'InputPassword';
 
 export default InputPassword;

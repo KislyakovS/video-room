@@ -1,4 +1,4 @@
-import { FC, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 'react';
 import clsx from 'clsx';
 
 import styles from './input.module.css';
@@ -8,7 +8,7 @@ interface InputProps extends InputElement {
     error?: string;
 }
 
-const Input: FC<InputProps> = ({ className, error = '', ...props }) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(({ className, error = '', ...props }, ref) => {
     const hasError = error.trim() !== '';
     const inputClasses = clsx(styles.input, {
         [styles.error]: hasError,
@@ -16,10 +16,12 @@ const Input: FC<InputProps> = ({ className, error = '', ...props }) => {
 
     return (
         <div className={className}>
-            <input className={inputClasses} {...props} />
+            <input {...props} className={inputClasses} ref={ref} />
             {hasError && <span className={styles.errorMessage}>{error}</span>}
         </div>
     );
-};
+});
+
+Input.displayName = 'Input';
 
 export default Input;
