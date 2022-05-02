@@ -3,6 +3,7 @@ export { default as ButtonIcon } from './button-icon';
 export { default as Checkbox } from './checkbox';
 export { default as Container } from './container';
 export { default as FormCreateRoom } from './form-create-room';
+export { default as FormSearch } from './form-search';
 export { default as Header } from './header';
 export { default as Input } from './input';
 export { default as InputPassword } from './input-password';
