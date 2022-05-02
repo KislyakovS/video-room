@@ -13,9 +13,9 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = ({ className, leftSide, center, rightSide }) => {
     return (
         <header className={clsx(className, styles.header)}>
-            {leftSide}
-            {center}
-            {rightSide}
+            <div>{leftSide}</div>
+            <div>{center}</div>
+            <div>{rightSide}</div>
         </header>
     );
 };

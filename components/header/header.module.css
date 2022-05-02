@@ -1,3 +1,10 @@
 .header {
+    display: flex;
+    align-items: center;
     padding: 20px 0;
+    gap: 15px;
+}
+
+.header > div {
+    width: calc(100% / 3);
 }
