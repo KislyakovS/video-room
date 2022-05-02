@@ -10,7 +10,7 @@ interface LogoProps {
     width?: number;
 }
 
-const Logo: FC<LogoProps> = ({ className, href, width = 50 }) => {
+const Logo: FC<LogoProps> = ({ className, href, width = 35 }) => {
     const image = <Image
         src={logo}
         width={width}
@@ -22,7 +22,7 @@ const Logo: FC<LogoProps> = ({ className, href, width = 50 }) => {
         return <Link href={href}><a className={className}>{image}</a></Link>;
     }
 
-    return <div className={className}>{image}</div>;
+    return <span className={className}>{image}</span>;
 };
 
 export default Logo;
