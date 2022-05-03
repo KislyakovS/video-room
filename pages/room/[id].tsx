@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import type { NextPage } from 'next';
 
-import { Header, Logo, Container, FormSearch, FormSendMessage, OnlineCounter, Message, MessageType } from 'components';
+import { Header, Logo, Container, FormSearch, FormSendMessage, OnlineCounter, Message, MessageType, ServiceMessage } from 'components';
 
 const chats = [
     {
@@ -87,7 +87,10 @@ const Room: NextPage = () => {
                                 fullDate={message.fullDate.toString()}
                                 time={message.time}
                             />)}
-                            <p style={{ margin: '5px 0', textAlign: 'center' }}><span className="accent">Boris Y.</span> left the room.</p>
+                            <ServiceMessage
+                                accent='Boris Y.'
+                                text='left the room.'
+                            />
                         </div>
                         <FormSendMessage />
                     </section>

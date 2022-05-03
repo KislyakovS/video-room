@@ -1,0 +1,10 @@
+.message {
+    margin: 0;
+
+    text-align: center;
+}
+
+.accent {
+    color: var(--active-color);
+    font-weight: 700;
+}
