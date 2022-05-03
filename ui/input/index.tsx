@@ -3,8 +3,8 @@ import clsx from 'clsx';
 
 import styles from './input.module.css';
 
-type InputElement = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-interface InputProps extends InputElement {
+type DefaultAttributesType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+interface InputProps extends DefaultAttributesType {
     fullWidth?: boolean;
     endAdornment?: ReactElement;
     error?: string;

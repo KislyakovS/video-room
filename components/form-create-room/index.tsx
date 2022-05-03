@@ -1,10 +1,7 @@
 import { useState, useCallback, FC } from 'react';
 import clsx from 'clsx';
 
-import Input from '../input';
-import Checkbox from '../checkbox';
-import InputPassword from '../input-password';
-import Button from '../button';
+import { Input, Checkbox, InputPassword, Button } from 'ui';
 
 import styles from './form-create-room.module.css';
 

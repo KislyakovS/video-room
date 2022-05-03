@@ -1,7 +1,6 @@
 import { FC } from 'react';
 
-import Input from '../input';
-import ButtonIcon from '../button-icon';
+import { Input, ButtonIcon } from 'ui';
 
 const FormSendMessage: FC = () => {
     return (

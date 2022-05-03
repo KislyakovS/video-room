@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 
-import { Header, Logo, Container, FormCreateRoom } from 'components';
+import { FormCreateRoom } from 'components';
+import { Header, Logo, Container } from 'ui';
 
 const Home: NextPage = () => {
     return (

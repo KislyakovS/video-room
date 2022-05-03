@@ -5,8 +5,8 @@ import CheckIcon from './check.svg';
 
 import styles from './checkbox.module.css';
 
-type CheckboxElement = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-interface CheckboxProps extends CheckboxElement {
+type DefaultAttributesType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+interface CheckboxProps extends DefaultAttributesType {
     className?: string;
     type?: never;
 }

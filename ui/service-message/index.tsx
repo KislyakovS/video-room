@@ -5,13 +5,13 @@ import styles from './service-message.module.css';
 
 interface ServiceMessageProps {
     className?: string;
-    accent?: string;
+    accentText?: string;
     text: string;
 }
 
-const ServiceMessage: FC<ServiceMessageProps> = ({ className, accent, text }) => {
+const ServiceMessage: FC<ServiceMessageProps> = ({ className, accentText, text }) => {
     return <p className={clsx(styles.message, className)}>
-        {accent && <span className={styles.accent}>{accent} </span>}
+        {accentText && <span className={styles.accent}>{accentText} </span>}
         {text}
     </p>;
 };

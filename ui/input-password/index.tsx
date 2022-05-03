@@ -3,8 +3,8 @@ import { useState, forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 're
 import Input from '../input';
 import ButtonIcon from '../button-icon';
 
-type InputElement = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-interface InputPasswordProps extends InputElement {
+type DefaultAttributesType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
+interface InputPasswordProps extends DefaultAttributesType {
     error?: string;
     type?: never;
 }

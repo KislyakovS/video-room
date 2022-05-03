@@ -1,7 +1,6 @@
 import { FC, DetailedHTMLProps, FormHTMLAttributes } from 'react';
 
-import Input from '../input';
-import ButtonIcon from '../button-icon';
+import { Input, ButtonIcon } from 'ui';
 
 type FormSearchProps = DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>;
 

@@ -16,8 +16,8 @@ const ICONS = Object.freeze({
 
 import styles from './button-icon.module.css';
 
-type ButtonElement = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
-interface ButtonIconProps extends ButtonElement {
+type DefaultAttributesType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+interface ButtonIconProps extends DefaultAttributesType {
     icon: keyof typeof ICONS,
     'aria-label': string,
 }

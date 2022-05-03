@@ -2,7 +2,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import type { NextPage } from 'next';
 
-import { Header, Logo, Container, FormSearch, FormSendMessage, OnlineCounter, Message, MessageType, ServiceMessage } from 'components';
+import { FormSearch, FormSendMessage } from 'components';
+import { Header, Logo, Container, OnlineCounter, Message, MessageType, ServiceMessage } from 'ui';
 
 const chats = [
     {
@@ -36,21 +37,21 @@ const chats = [
         type: MessageType.my,
         text: 'Nature is simple and does not indulge in unnecessary reasons.',
         fullDate: new Date(),
-        time: '7:11',
+        time: '7:31',
     },
     {
         type: MessageType.other,
         name: 'Boris Y.',
         text: 'Mine are great. How are you?',
         fullDate: new Date(),
-        time: '7:31',
+        time: '7:34',
     },
     {
         type: MessageType.other,
         name: 'Isaac N.',
         text: 'Perfectly 😀',
         fullDate: new Date(),
-        time: '7:30',
+        time: '7:37',
     },
 ]
 
@@ -77,7 +78,6 @@ const Room: NextPage = () => {
                         </ul>
                     </section>
                     <section className="chat">
-                        Chat
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
                             {chats.map((message, i) => <Message
                                 key={i}
@@ -88,7 +88,7 @@ const Room: NextPage = () => {
                                 time={message.time}
                             />)}
                             <ServiceMessage
-                                accent='Boris Y.'
+                                accentText='Boris Y.'
                                 text='left the room.'
                             />
                         </div>
