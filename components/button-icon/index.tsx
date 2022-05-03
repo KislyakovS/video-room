@@ -19,6 +19,7 @@ import styles from './button-icon.module.css';
 type ButtonElement = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 interface ButtonIconProps extends ButtonElement {
     icon: keyof typeof ICONS,
+    'aria-label': string,
 }
 
 const ButtonIcon = forwardRef<HTMLButtonElement, ButtonIconProps>(({ className, icon, ...props }, ref) => {
