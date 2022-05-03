@@ -86,3 +86,8 @@ html, body {
     border: var(--border);
     border-radius: var(--border-radius);
 }
+
+.accent {
+    color: var(--active-color);
+    font-weight: 700;
+}
