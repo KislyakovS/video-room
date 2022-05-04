@@ -1,10 +1,12 @@
-import { FC } from 'react';
+import { FC, DetailedHTMLProps, FormHTMLAttributes } from 'react';
 
 import { Input, ButtonIcon } from 'ui';
 
-const FormSendMessage: FC = () => {
+type FormSendMessageProps = DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>;
+
+const FormSendMessage: FC<FormSendMessageProps> = (props) => {
     return (
-        <form>
+        <form {...props}>
             <Input
                 placeholder="Message"
                 fullWidth={true}
