@@ -1,4 +1,4 @@
-import { useState, forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { useReducer, forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 'react';
 
 import Input from '../input';
 import ButtonIcon from '../button-icon';
@@ -10,11 +10,7 @@ interface InputPasswordProps extends DefaultAttributesType {
 }
 
 const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(({ className, ...props }, ref) => {
-    const [showPassword, setShowPassword] = useState(false);
-
-    const onClickShowPassword = () => {
-        setShowPassword(show => !show);
-    }
+    const [showPassword, toggleShowPassword] = useReducer((state) => !state, false);
 
     return (
         <Input
@@ -25,7 +21,7 @@ const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(({ classN
             endAdornment={
                 <ButtonIcon
                     type='button'
-                    onClick={onClickShowPassword}
+                    onClick={toggleShowPassword}
                     aria-label={showPassword ? 'Show password' : 'Hide password'}
                     icon={showPassword ? 'eye' : 'eyeClose'}
                 />

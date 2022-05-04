@@ -1,4 +1,4 @@
-import { useState, useCallback, FC } from 'react';
+import { useReducer, FC } from 'react';
 import clsx from 'clsx';
 
 import { Input, Checkbox, InputPassword, Button } from 'ui';
@@ -10,18 +10,14 @@ interface FormCreateRoomProps {
 }
 
 const FormCreateRoom: FC<FormCreateRoomProps> = ({ className }) => {
-    const [showPassword, setShowPassword] = useState(false);
-
-    const onChangeShowPassword = useCallback(() => {
-        setShowPassword(showPassword => !showPassword);
-    }, []);
+    const [showInputPassword, toggleShowInputPassword] = useReducer((state) => !state, false);
 
     return (
         <form className={clsx(styles.form, className)}>
             <Input placeholder="Name room" className={styles.input} />
             <Input placeholder="Name user" className={styles.input} />
-            <Checkbox onChange={onChangeShowPassword} checked={showPassword}>Has password</Checkbox>
-            {showPassword && <InputPassword placeholder='Password' className={styles.input} />}
+            <Checkbox onChange={toggleShowInputPassword} checked={showInputPassword}>Has password</Checkbox>
+            {showInputPassword && <InputPassword placeholder='Password' className={styles.input} />}
             <Button>Create Room</Button>
         </form>
     )
