@@ -16,6 +16,8 @@ html, body {
 :root {
     --container-width: 1240px;
     --container-gap: 15px;
+    --header-height: 80px;
+    --main-height: calc(100vh - 80px - 20px);
 
     --active-color: #fb8660;
     --error-color: #f7716e;
@@ -43,21 +45,23 @@ html, body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    height: calc(100vh - 130px);
+    height: var(--main-height);
 }
 
 .room-main > section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
+    height: inherit;
 }
 
 .video {
+    /* display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px; */
     width: 100%;
     border: var(--border);
     border-radius: var(--border-radius);
-    height: 100%;
+    height: 70%;
 }
 
 .chat {

@@ -14,6 +14,13 @@
     display: flex;
 }
 
+.serviceMessage {
+    margin: 0;
+    padding: 4px 0;
+
+    text-align: center;
+}
+
 .my.message {
     flex-direction: row-reverse;
 }
@@ -40,6 +47,10 @@
 
 .name {
     font-weight: 700;
+}
+
+.serviceMessage .name {
+    color: var(--active-color);
 }
 
 .text {

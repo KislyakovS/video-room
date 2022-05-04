@@ -5,7 +5,8 @@ import styles from './message.module.css';
 
 export enum MessageType {
     my,
-    other
+    other,
+    service,
 }
 
 interface MessageProps {
@@ -17,6 +18,13 @@ interface MessageProps {
 }
 
 const Message: FC<MessageProps> = ({ type, name, text, fullDate, time }) => {
+    if (type === MessageType.service) {
+        return <p className={styles.serviceMessage}>
+            {name && <span className={styles.name}>{name} </span>}
+            {text}
+        </p>
+    }
+
     const messageClasses = clsx(styles.message, {
         [styles.my]: type === MessageType.my,
         [styles.other]: type === MessageType.other
@@ -31,7 +39,7 @@ const Message: FC<MessageProps> = ({ type, name, text, fullDate, time }) => {
             </div>
             <span className={styles.spacer} />
         </div>
-    )
+    );
 };
 
 export default Message;
