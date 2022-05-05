@@ -8,3 +8,4 @@ export { default as InputPassword } from './input-password';
 export { default as Logo } from './logo';
 export { default as Message, MessageType } from './message';
 export { default as OnlineCounter } from './online-counter';
+export { default as Video } from './video';

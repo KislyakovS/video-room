@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import type { NextPage } from 'next';
 
 import { FormSearch, Chat } from 'components';
-import { Header, Logo, Container, OnlineCounter } from 'ui';
+import { Header, Logo, Container, OnlineCounter, Video } from 'ui';
 
 
 const Room: NextPage = () => {
@@ -22,7 +22,9 @@ const Room: NextPage = () => {
                 />
                 <main className="room-main">
                     <section>
-                        <div className="video"></div>
+                        <Video title="Crazy Frog - Axel F" autoPlay controls>
+                            <source src="/crazy-frog-axel-f.mp4" type="video/mp4" />
+                        </Video>
                         <ul className="next-video">
                             <li></li>
                             <li></li>
