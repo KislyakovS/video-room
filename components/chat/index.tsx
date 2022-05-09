@@ -117,7 +117,7 @@ const chats = [
 ];
 
 const Chat: FC = () => {
-    return <section className={styles.wrapper}>
+    return <div className={styles.wrapper}>
         <ol className={styles.messages}>
             {chats.map(message => (
                 <li key={message.id}>
@@ -132,7 +132,7 @@ const Chat: FC = () => {
             ))}
         </ol>
         <FormSendMessage className={styles.sendMessage} />
-    </section>
+    </div>
 };
 
 export default Chat;

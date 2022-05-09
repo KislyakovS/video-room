@@ -13,7 +13,7 @@ const Home: NextPage = () => {
             <Container>
                 <Header leftSide={<Logo />} />
                 <main>
-                    <FormCreateRoom className='form-create-room' />
+                    <FormCreateRoom className='center' />
                 </main>
             </Container>
         </>

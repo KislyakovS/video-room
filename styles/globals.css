@@ -31,19 +31,8 @@ html, body {
     --transition-timing: ease-in;
 }
 
-.form-create-room {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-
-    width: 440px;
-
-    transform: translateX(-50%);
-}
-
 .room-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
     gap: 20px;
     height: var(--main-height);
 }
@@ -52,41 +41,23 @@ html, body {
     height: inherit;
 }
 
-.video {
-    /* display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 15px; */
+.room-main > section:first-child {
+    width: 70%;
+}
+
+.room-main > section:last-child {
+    width: 30%;
+}
+
+.swiper {
     width: 100%;
-    border: var(--border);
-    border-radius: var(--border-radius);
-    height: 70%;
+    padding-bottom: 20px !important;
 }
 
-.chat {
-    padding: 10px;
-    border: var(--border);
-    border-radius: var(--border-radius);
+.swiper .swiper-pagination {
+    bottom: 0 !important;
 }
 
-.chat input {
-    width: 100%;
-}
-
-.next-video {
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.next-video li {
-    width: 250px;
-    height: 150px;
-
-    border: var(--border);
-    border-radius: var(--border-radius);
+.swiper .swiper-pagination-bullet-active {
+    background-color: var(--active-color);
 }
