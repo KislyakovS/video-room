@@ -29,6 +29,7 @@
 
 .checked svg {
     display: none;
+    width: 100%;
 }
 
 .input:checked + .label .checked {
