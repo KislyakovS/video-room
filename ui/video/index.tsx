@@ -4,7 +4,7 @@ import styles from './video.module.css';
 
 type DefaultAttributesType = DetailedHTMLProps<VideoHTMLAttributes<HTMLVideoElement>, HTMLVideoElement>;
 interface VideoPropsType extends DefaultAttributesType {
-    title: string;
+    title?: string;
     children?: ReactNode;
 }
 
@@ -12,7 +12,7 @@ interface VideoPropsType extends DefaultAttributesType {
 const Video: FC<VideoPropsType> = ({ className, title, children, ...props }) => {
     return (
         <section className={className}>
-            <h3 className={styles.title}>{title}</h3>
+            {title && <h3 className={styles.title}>{title}</h3>}
             <video {...props} className={styles.video}>{children}</video>
         </section>
     )
