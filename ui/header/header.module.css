@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: var(--header-height);
+    gap: 15px;
+}
+
+.header > div {
+    display: flex;
+    width: calc(100% / 3);
+}
+
+.left {
+    justify-content: left;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: right;
+}

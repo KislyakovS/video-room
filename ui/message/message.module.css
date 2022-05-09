@@ -1,0 +1,66 @@
+.my {
+    --bubble-background-color: var(--active-color);
+    --bubble-text-color: #fff;
+}
+
+.other {
+    --bubble-background-color: #e6e7ec;
+    --bubble-text-color: #333;
+}
+
+.message {
+    --spacer: 20px;
+
+    display: flex;
+}
+
+.serviceMessage {
+    margin: 0;
+    padding: 4px 0;
+
+    text-align: center;
+}
+
+.my.message {
+    flex-direction: row-reverse;
+}
+
+.spacer {
+    width: var(--spacer);
+}
+
+.bubble {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - var(--spacer));
+    padding: 5px 8px 5px 10px;
+
+    font-size: 14px;
+    color: var(--bubble-text-color);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-wrap;
+
+    background-color: var(--bubble-background-color);
+    border-radius: var(--border-radius);
+}
+
+.name {
+    font-weight: 700;
+}
+
+.serviceMessage .name {
+    color: var(--active-color);
+}
+
+.text {
+    margin: 0;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.my .time {
+    margin-left: auto;
+}

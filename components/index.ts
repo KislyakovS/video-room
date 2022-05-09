@@ -1,8 +1,5 @@
-export { default as Button } from './button';
-export { default as Checkbox } from './checkbox';
-export { default as Container } from './container';
+export { default as Chat } from './chat';
 export { default as FormCreateRoom } from './form-create-room';
-export { default as Header } from './header';
-export { default as Input } from './input';
-export { default as InputPassword } from './input-password';
-export { default as Logo } from './logo';
+export { default as FormSearch } from './form-search';
+export { default as FormSendMessage } from './form-send-message';
+export { default as NextVideos } from './next-videos';

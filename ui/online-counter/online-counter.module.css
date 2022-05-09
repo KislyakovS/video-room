@@ -1,0 +1,38 @@
+.wrapper {
+    --main-color: #f13d3d;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+
+    background-color: rgba(241, 61, 61, 0.05);
+    border-radius: 30px;
+}
+
+.rec {
+    --size: 10px;
+
+    width: var(--size);
+    height: var(--size);
+
+    background-color: var(--main-color);
+    border-radius: 50%;
+
+    animation: animate-rec 1s ease-in-out infinite;
+}
+
+@keyframes animate-rec {
+    0% {
+        box-shadow: 0 0 0px 1px rgb(241 61 61 / 30%);
+    }
+    100% {
+        box-shadow: 0 0 0px 6px rgb(241 61 61 / 0%);
+    }
+}
