@@ -1,5 +1,6 @@
 export { default as Button } from './button';
 export { default as ButtonIcon } from './button-icon';
+export { default as Card } from './card';
 export { default as Checkbox } from './checkbox';
 export { default as Container } from './container';
 export { default as Header } from './header';
