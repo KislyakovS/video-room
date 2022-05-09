@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
 
-import { Header, Logo, Container, FormCreateRoom } from 'components';
+import { FormCreateRoom } from 'components';
+import { Header, Logo, Container } from 'ui';
 
 const Home: NextPage = () => {
     return (
@@ -12,7 +13,7 @@ const Home: NextPage = () => {
             <Container>
                 <Header leftSide={<Logo />} />
                 <main>
-                    <FormCreateRoom className='form-create-room' />
+                    <FormCreateRoom className='center' />
                 </main>
             </Container>
         </>

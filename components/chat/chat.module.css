@@ -1,0 +1,26 @@
+.wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.messages {
+    height: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
+    list-style: none;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.messages li:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.sendMessage {
+    margin-top: auto;
+}

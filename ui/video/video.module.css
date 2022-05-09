@@ -1,0 +1,14 @@
+.title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video {
+    width: 100%;
+
+    border-radius: var(--border-radius);
+}

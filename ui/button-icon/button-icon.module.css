@@ -1,0 +1,29 @@
+.button {
+    --size: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: opacity var(--transition-time) var(--transition-timing);
+}
+
+.button:hover svg,
+.button:focus-visible svg {
+    opacity: 0.7;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.button svg {
+    width: 100%;
+}
