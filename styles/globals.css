@@ -17,7 +17,7 @@ html, body {
     --container-width: 1240px;
     --container-gap: 15px;
     --header-height: 80px;
-    --main-height: calc(100vh - 80px - 20px);
+    --main-height: calc(100vh - 80px);
 
     --active-color: #fb8660;
     --error-color: #f7716e;
@@ -31,10 +31,13 @@ html, body {
     --transition-timing: ease-in;
 }
 
+main {
+    height: var(--main-height);
+}
+
 .room-main {
     display: flex;
     gap: 20px;
-    height: var(--main-height);
 }
 
 .room-main > section {
