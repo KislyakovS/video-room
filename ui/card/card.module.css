@@ -27,7 +27,7 @@
     padding: 2px 5px;
 
     font-size: 12px;
-    color: #fff;
+    color: var(--second-color);
 
     background-color: var(--active-color);
     border-radius: var(--border-radius);

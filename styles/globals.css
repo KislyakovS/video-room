@@ -10,6 +10,7 @@ html, body {
     margin: 0;
     padding: 0;
 
+    color: var(--primary-color);
     font-family: var(--font-family);
 }
 
@@ -19,6 +20,8 @@ html, body {
     --header-height: 80px;
     --main-height: calc(100vh - 80px);
 
+    --primary-color: #333333;
+    --second-color:#ffffff;
     --active-color: #fb8660;
     --error-color: #f7716e;
 

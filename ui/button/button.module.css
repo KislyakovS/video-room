@@ -4,7 +4,7 @@
 
     font-family: var(--font-family);
     font-size: 16px;
-    color: #fff;
+    color: var(--second-color);
 
     background-color: var(--active-color);
     border: none;

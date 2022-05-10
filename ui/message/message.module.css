@@ -1,11 +1,11 @@
 .my {
     --bubble-background-color: var(--active-color);
-    --bubble-text-color: #fff;
+    --bubble-text-color: var(--second-color);
 }
 
 .other {
     --bubble-background-color: #e6e7ec;
-    --bubble-text-color: #333;
+    --bubble-text-color: var(--primary-color);
 }
 
 .message {
