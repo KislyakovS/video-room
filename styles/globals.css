@@ -38,6 +38,7 @@ main {
 .room-main {
     display: flex;
     gap: 20px;
+    height: calc(var(--main-height) - 20px);
 }
 
 .room-main > section {
