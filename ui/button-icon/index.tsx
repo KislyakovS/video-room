@@ -1,31 +1,17 @@
-import { forwardRef, DetailedHTMLProps, ButtonHTMLAttributes } from 'react';
+import { forwardRef } from 'react';
 import clsx from 'clsx';
 
-import SearchIcon from './assets/search.svg';
-import EyeIcon from './assets/eye.svg';
-import EyeCloseIcon from './assets/eye-close.svg';
-import PlaneIcon from './assets/plane.svg';
-
-const ICONS = Object.freeze({
-    eyeClose: <EyeCloseIcon />,
-    eye: <EyeIcon />,
-    plane: <PlaneIcon />,
-    search: <SearchIcon />,
-
-});
+import { ButtonIconProps } from './types';
+import { ICONS } from './constants';
 
 import styles from './button-icon.module.css';
 
-type DefaultAttributesType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
-interface ButtonIconProps extends DefaultAttributesType {
-    icon: keyof typeof ICONS,
-    'aria-label': string,
-}
-
 const ButtonIcon = forwardRef<HTMLButtonElement, ButtonIconProps>(({ className, icon, ...props }, ref) => {
+    const Icon = ICONS[icon];
+
     return (
         <button {...props} ref={ref} className={clsx(styles.button, className)}>
-            {ICONS[icon]}
+            <Icon />
         </button>
     )
 });

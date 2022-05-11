@@ -2,13 +2,10 @@ import { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { LogoProps } from './types';
+
 import logo from './logo.png';
 
-interface LogoProps {
-    className?: string;
-    href?: string;
-    width?: number;
-}
 
 const Logo: FC<LogoProps> = ({ className, href, width = 35 }) => {
     const image = <Image

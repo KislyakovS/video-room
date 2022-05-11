@@ -1,37 +1,25 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 
+import { MessageProps, MessageType } from './types';
+
 import styles from './message.module.css';
 
-export enum MessageType {
-    my,
-    other,
-    service,
-}
-
-interface MessageProps {
-    type: MessageType,
-    name?: string;
-    text: string;
-    fullDate: string;
-    time: string;
-}
-
-const Message: FC<MessageProps> = ({ type, name, text, fullDate, time }) => {
+const Message: FC<MessageProps> = ({ className, type, name, text, fullDate, time, ...props }) => {
     if (type === MessageType.service) {
-        return <p className={styles.serviceMessage}>
+        return <div {...props} className={clsx(className, styles.serviceMessage)}>
             {name && <span className={styles.name}>{name} </span>}
             {text}
-        </p>
+        </div>
     }
 
-    const messageClasses = clsx(styles.message, {
+    const messageClasses = clsx(className, styles.message, {
         [styles.my]: type === MessageType.my,
         [styles.other]: type === MessageType.other
     });
 
     return (
-        <div className={messageClasses}>
+        <div {...props} className={messageClasses}>
             <div className={styles.bubble}>
                 {name && <span className={styles.name}>{name}</span>}
                 <p className={styles.text}>{text}</p>

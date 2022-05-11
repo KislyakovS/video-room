@@ -1,8 +1,8 @@
-import { FC, DetailedHTMLProps, FormHTMLAttributes } from 'react';
+import { FC } from 'react';
 
 import { Input, ButtonIcon } from 'ui';
 
-type FormSearchProps = DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>;
+import { FormSearchProps } from './types';
 
 const FormSearch: FC<FormSearchProps> = ({ className, ...props }) => {
     return <form {...props} className={className}>

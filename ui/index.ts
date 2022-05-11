@@ -7,7 +7,8 @@ export { default as Header } from './header';
 export { default as Input } from './input';
 export { default as InputPassword } from './input-password';
 export { default as Logo } from './logo';
-export { default as Message, MessageType } from './message';
+export { default as Message } from './message';
+export { MessageType } from './message/types'
 export { default as NotFound } from './not-found';
 export { default as OnlineCounter } from './online-counter';
 export { default as Video } from './video';

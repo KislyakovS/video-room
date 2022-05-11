@@ -1,14 +1,9 @@
-import { forwardRef, DetailedHTMLProps, InputHTMLAttributes, ReactElement } from 'react';
+import { forwardRef } from 'react';
 import clsx from 'clsx';
 
-import styles from './input.module.css';
+import { InputProps } from './types';
 
-type DefaultAttributesType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-interface InputProps extends DefaultAttributesType {
-    fullWidth?: boolean;
-    endAdornment?: ReactElement;
-    error?: string;
-}
+import styles from './input.module.css';
 
 const Input = forwardRef<HTMLInputElement, InputProps>(({ className, endAdornment, fullWidth = false, error = '', ...props }, ref) => {
     const hasError = error.trim() !== '';

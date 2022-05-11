@@ -1,13 +1,9 @@
-import { useReducer, forwardRef, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { useReducer, forwardRef } from 'react';
+
+import { InputPasswordProps } from './types';
 
 import Input from '../input';
 import ButtonIcon from '../button-icon';
-
-type DefaultAttributesType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-interface InputPasswordProps extends DefaultAttributesType {
-    error?: string;
-    type?: never;
-}
 
 const InputPassword = forwardRef<HTMLInputElement, InputPasswordProps>(({ className, ...props }, ref) => {
     const [showPassword, toggleShowPassword] = useReducer((state) => !state, false);

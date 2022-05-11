@@ -1,15 +1,11 @@
-import { forwardRef, useId, DetailedHTMLProps, InputHTMLAttributes } from 'react';
+import { forwardRef, useId } from 'react';
 import clsx from 'clsx';
+
+import { CheckboxProps } from './types';
 
 import CheckIcon from './check.svg';
 
 import styles from './checkbox.module.css';
-
-type DefaultAttributesType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>;
-interface CheckboxProps extends DefaultAttributesType {
-    className?: string;
-    type?: never;
-}
 
 const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(({ className, children, ...props }, ref) => {
     const id = useId();

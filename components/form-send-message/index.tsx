@@ -1,8 +1,8 @@
-import { FC, DetailedHTMLProps, FormHTMLAttributes } from 'react';
+import { FC } from 'react';
 
 import { Input, ButtonIcon } from 'ui';
 
-type FormSendMessageProps = DetailedHTMLProps<FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>;
+import { FormSendMessageProps } from './types';
 
 const FormSendMessage: FC<FormSendMessageProps> = (props) => {
     return (

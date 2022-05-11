@@ -3,17 +3,15 @@ import clsx from 'clsx';
 
 import { Input, Checkbox, InputPassword, Button } from 'ui';
 
+import { FormCreateRoomProps } from './types';
+
 import styles from './form-create-room.module.css';
 
-interface FormCreateRoomProps {
-    className?: string;
-}
-
-const FormCreateRoom: FC<FormCreateRoomProps> = ({ className }) => {
+const FormCreateRoom: FC<FormCreateRoomProps> = ({ className, ...props }) => {
     const [showInputPassword, toggleShowInputPassword] = useReducer((state) => !state, false);
 
     return (
-        <form className={clsx(styles.form, className)}>
+        <form {...props} className={clsx(styles.form, className)}>
             <Input placeholder="Name room" className={styles.input} />
             <Input placeholder="Name user" className={styles.input} />
             <Checkbox onChange={toggleShowInputPassword} checked={showInputPassword}>Has password</Checkbox>

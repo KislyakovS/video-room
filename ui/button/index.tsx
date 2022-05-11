@@ -1,9 +1,9 @@
-import { forwardRef, DetailedHTMLProps, ButtonHTMLAttributes } from 'react';
+import { forwardRef } from 'react';
 import clsx from 'clsx';
 
-import styles from './button.module.css';
+import { ButtonProps } from './types';
 
-type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+import styles from './button.module.css';
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ className, children, ...props }, ref) => {
     return (
