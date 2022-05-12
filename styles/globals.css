@@ -35,13 +35,13 @@ html, body {
 }
 
 main {
-    height: var(--main-height);
+    min-height: var(--main-height);
 }
 
 .room-main {
     display: flex;
     gap: 20px;
-    height: calc(var(--main-height) - 20px);
+    min-height: calc(var(--main-height) - 20px);
 }
 
 .room-main > section {
@@ -67,4 +67,11 @@ main {
 
 .swiper .swiper-pagination-bullet-active {
     background-color: var(--active-color);
+}
+
+.aside {
+    position: sticky;
+    top: var(--header-height);
+
+    height: calc(100vh - var(--header-height) - 20px);
 }

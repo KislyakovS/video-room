@@ -28,9 +28,9 @@ const Room: NextPage = () => {
                         </Video>
                         <NextVideos />
                     </section>
-                    <section>
+                    <aside className="aside">
                         <Chat />
-                    </section>
+                    </aside>
                 </main>
             </Container>
         </>
