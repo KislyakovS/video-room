@@ -1,0 +1,1 @@
+export const CSS_VARIABL_HEADER_HEIGHT = '--header-height';

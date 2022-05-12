@@ -68,10 +68,3 @@ main {
 .swiper .swiper-pagination-bullet-active {
     background-color: var(--active-color);
 }
-
-.aside {
-    position: sticky;
-    top: var(--header-height);
-
-    height: calc(100vh - var(--header-height) - 20px);
-}

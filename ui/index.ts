@@ -1,3 +1,4 @@
+export { default as Aside } from './aside';
 export { default as Button } from './button';
 export { default as ButtonIcon } from './button-icon';
 export { default as Card } from './card';

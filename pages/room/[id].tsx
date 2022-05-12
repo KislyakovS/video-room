@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import type { NextPage } from 'next';
 
 import { FormSearch, Chat, NextVideos } from 'components';
-import { Header, Logo, Container, OnlineCounter, Video } from 'ui';
+import { Header, Logo, Container, OnlineCounter, Video, Aside } from 'ui';
 
 import 'swiper/css/bundle';
 
@@ -28,9 +28,9 @@ const Room: NextPage = () => {
                         </Video>
                         <NextVideos />
                     </section>
-                    <aside className="aside">
+                    <Aside sticky>
                         <Chat />
-                    </aside>
+                    </Aside>
                 </main>
             </Container>
         </>
