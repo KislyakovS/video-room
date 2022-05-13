@@ -35,12 +35,13 @@ html, body {
 }
 
 main {
-    min-height: var(--main-height);
+    height: var(--main-height);
 }
 
 .room-main {
     display: flex;
     gap: 20px;
+    padding-bottom: 20px;
     min-height: calc(var(--main-height) - 20px);
 }
 

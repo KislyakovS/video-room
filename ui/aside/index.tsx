@@ -26,7 +26,7 @@ const Aside: FC<AsideProps> = ({ className, sticky = false, children }) => {
 
         return () => {
             window.removeEventListener('scroll', onScroll);
-        };
+        }
     }, [sticky]);
 
     const asideClasses = clsx(className, styles.aside, {

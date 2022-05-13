@@ -10,7 +10,7 @@ const NotFound: FC<NotFoundProps> = ({ className, ...props }) => {
         <section {...props} className={clsx(className, styles.wrapper)}>
             <span className={styles.code}>404</span>
             <h3 className={styles.title}>Not Found</h3>
-            <span className={styles.legend}>Sorry, we were unable to find that page.</span>
+            <span>Sorry, we were unable to find that page.</span>
         </section>
     )
 };
