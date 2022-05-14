@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, ButtonHTMLAttributes } from 'react';
-import { ICONS } from './constants';
+import { ICONS } from '../icon/constants';
 
 type DefaultProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 

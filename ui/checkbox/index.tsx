@@ -1,9 +1,9 @@
 import { forwardRef, useId } from 'react';
 import clsx from 'clsx';
 
-import { CheckboxProps } from './types';
+import Icon from '../icon';
 
-import CheckIcon from './check.svg';
+import { CheckboxProps } from './types';
 
 import styles from './checkbox.module.css';
 
@@ -14,7 +14,7 @@ const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(({ className, child
         <>
             <input {...props} ref={ref} type="checkbox" className={styles.input} id={id} />
             <label className={clsx(styles.label, className)} htmlFor={id}>
-                <span className={styles.checked}><CheckIcon /></span>
+                <span className={styles.checked}><Icon type="checked" /></span>
                 <span>{children}</span>
             </label>
         </>

@@ -12,8 +12,6 @@ const Icon: FC<IconProps> = ({ className, type, size = Sizes.middle }) => {
 
     const iconClasses = clsx(className, styles[size]);
 
-    console.log(styles, size);
-
     return <I className={iconClasses} />
 };
 

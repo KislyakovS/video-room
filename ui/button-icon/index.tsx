@@ -1,17 +1,16 @@
 import { forwardRef } from 'react';
 import clsx from 'clsx';
 
+import Icon from '../icon';
+
 import { ButtonIconProps } from './types';
-import { ICONS } from './constants';
 
 import styles from './button-icon.module.css';
 
 const ButtonIcon = forwardRef<HTMLButtonElement, ButtonIconProps>(({ className, icon, ...props }, ref) => {
-    const Icon = ICONS[icon];
-
     return (
         <button {...props} ref={ref} className={clsx(styles.button, className)}>
-            <Icon />
+            <Icon type={icon} />
         </button>
     )
 });
