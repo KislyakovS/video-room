@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import Button from './index';
+import Button from './button';
 
 describe('Component Button:', () => {
     it('snapshot', () => {
