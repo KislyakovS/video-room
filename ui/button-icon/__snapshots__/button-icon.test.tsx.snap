@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component ButtonIcon: snapshot 1`] = `
+<div>
+  <button
+    aria-label="Search"
+    class="button"
+  >
+    Svg Icon - search
+  </button>
+</div>
+`;
