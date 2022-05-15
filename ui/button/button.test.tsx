@@ -21,4 +21,4 @@ describe('Component Button:', () => {
 
         expect(onClick).toHaveBeenCalled();
     });
-})
+});
