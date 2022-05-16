@@ -5,7 +5,6 @@ import OnlineCounterProps from './online-counter.type';
 
 import styles from './online-counter.module.css';
 
-
 const OnlineCounter: FC<OnlineCounterProps> = ({ className, count, ...props }) => {
     return <div {...props} className={clsx(styles.wrapper, className)}>
         <i className={styles.rec} />
