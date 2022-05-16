@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video Component: snapshot 1`] = `
+<div>
+  <section
+    controls=""
+  >
+    <h3
+      class="title"
+    >
+      Зеленая миля
+    </h3>
+    <video
+      class="video"
+      controls=""
+    >
+      <source
+        src="./src-video"
+        type="video/mp4"
+      />
+    </video>
+  </section>
+</div>
+`;
