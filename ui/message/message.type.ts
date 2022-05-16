@@ -8,10 +8,10 @@ export enum MessageType {
     service,
 }
 
-export interface MessageProps extends DefaultProps {
+export default interface MessageProps extends DefaultProps {
     type: MessageType,
     name?: string;
     text: string;
-    fullDate: string;
-    time: string;
+    fullDate?: string;
+    time?: string;
 };
