@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component: snapshot default state 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <input
+      class="input"
+      placeholder="input field"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Component: snapshot error state 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <input
+      class="input error"
+    />
+    <span
+      class="errorMessage"
+    >
+      Field is not valid
+    </span>
+  </div>
+</div>
+`;
