@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound Component: snapshot 1`] = `
+<div>
+  <section
+    class="wrapper"
+  >
+    <span
+      class="code"
+    >
+      404
+    </span>
+    <h3
+      class="title"
+    >
+      Not Found
+    </h3>
+    <span>
+      Sorry, we were unable to find that page.
+    </span>
+  </section>
+</div>
+`;
