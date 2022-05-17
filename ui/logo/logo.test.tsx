@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import Logo from './logo';
 
-describe('Logo Component:', () => {
+describe('<Logo>', () => {
     it('snapshot', () => {
         const { container } = render(<Logo />);
 

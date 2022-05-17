@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NotFound Component: snapshot 1`] = `
+exports[`<NotFound> snapshot 1`] = `
 <div>
   <section
     class="wrapper"

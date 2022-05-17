@@ -9,7 +9,7 @@ interface MockProps {
 
 jest.mock('../icon', () => ({ type }: MockProps) => `Svg Icon - ${type}`);
 
-describe('Component ButtonIcon:', () => {
+describe('<ButtonIcon>', () => {
     it('snapshot', () => {
         const { container } = render(<ButtonIcon icon='search' aria-label='Search' />);
 

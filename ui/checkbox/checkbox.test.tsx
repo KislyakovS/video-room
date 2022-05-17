@@ -9,7 +9,7 @@ interface MockProps {
 
 jest.mock('../icon', () => ({ type }: MockProps) => `Svg Icon - ${type}`);
 
-describe('Component Checkbox:', () => {
+describe('<Checkbox>', () => {
     it('snapshot', () => {
         const { container } = render(<Checkbox>Checkbox</Checkbox>);
 

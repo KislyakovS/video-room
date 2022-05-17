@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import NotFound from './not-found';
 
-describe('NotFound Component:', () => {
+describe('<NotFound>', () => {
     it('snapshot', () => {
         const { container } = render(<NotFound />);
 

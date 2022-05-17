@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import Aside from './aside';
 
-describe('Component Aside:', () => {
+describe('<Aside>', () => {
     it('snapshot', () => {
         const { container } = render(<Aside>Aside</Aside>);
 

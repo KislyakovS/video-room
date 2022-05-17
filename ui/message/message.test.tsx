@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import Message from './message';
 import { MessageType } from './message.type';
 
-describe('Message Component:', () => {
+describe('<Message>', () => {
     it('snapshot type my', () => {
         const { container } = render(<Message
             type={MessageType.my}

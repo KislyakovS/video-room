@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Message Component: snapshot type my 1`] = `
+exports[`<Message> snapshot type my 1`] = `
 <div>
   <div
     class="message my"
@@ -27,7 +27,7 @@ exports[`Message Component: snapshot type my 1`] = `
 </div>
 `;
 
-exports[`Message Component: snapshot type other 1`] = `
+exports[`<Message> snapshot type other 1`] = `
 <div>
   <div
     class="message other"
@@ -59,7 +59,7 @@ exports[`Message Component: snapshot type other 1`] = `
 </div>
 `;
 
-exports[`Message Component: snapshot type service 1`] = `
+exports[`<Message> snapshot type service 1`] = `
 <div>
   <div
     class="serviceMessage"

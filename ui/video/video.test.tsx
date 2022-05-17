@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import Video from './video';
 
-describe('Video Component:', () => {
+describe('<Video>', () => {
     it('snapshot', () => {
         const { container } = render(
             <Video title='Зеленая миля' controls>

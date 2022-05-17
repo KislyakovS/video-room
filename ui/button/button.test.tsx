@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 
 import Button from './button';
 
-describe('Component Button:', () => {
+describe('<Button>', () => {
     it('snapshot', () => {
         const { container } = render(<Button>Button</Button>);
 

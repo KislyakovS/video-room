@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 
 import Header from './header';
 
-describe('Component Header:', () => {
+describe('<Header>', () => {
     it('snapshot', () => {
         const { container } = render(<Header
             leftSide='Left Side'

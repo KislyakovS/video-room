@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Logo Component: snapshot 1`] = `
+exports[`<Logo> snapshot 1`] = `
 <div>
   <span>
     <span
@@ -29,7 +29,7 @@ exports[`Logo Component: snapshot 1`] = `
 </div>
 `;
 
-exports[`Logo Component: snapshot link 1`] = `
+exports[`<Logo> snapshot link 1`] = `
 <div>
   <a
     href="/"

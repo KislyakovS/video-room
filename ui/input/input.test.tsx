@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event';
 
 import Input from './input';
 
-describe('Input Component:', () => {
+describe('<Input>', () => {
     it('snapshot default state', () => {
         const { container } = render(<Input placeholder='input field' />);
 
