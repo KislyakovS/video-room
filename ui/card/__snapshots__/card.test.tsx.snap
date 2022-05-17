@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card> snapshot 1`] = `
+<div>
+  <article
+    class="wrapper"
+  >
+    <div
+      class="poster"
+    >
+      <img
+        alt="Movie poster - Зеленая миля"
+        src="http://poster.com"
+      />
+      <span
+        class="duration"
+      >
+        189 мин.
+      </span>
+    </div>
+    <h3
+      class="title"
+      title="Зеленая миля"
+    >
+      Зеленая миля
+    </h3>
+  </article>
+</div>
+`;

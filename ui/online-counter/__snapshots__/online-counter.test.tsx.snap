@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OnlineCounter> snapshot 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <i
+      class="rec"
+    />
+    <span>
+      Online 
+      10
+    </span>
+  </div>
+</div>
+`;

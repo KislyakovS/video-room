@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Aside> snapshot 1`] = `
+<div>
+  <aside
+    class="aside"
+  >
+    Aside
+  </aside>
+</div>
+`;

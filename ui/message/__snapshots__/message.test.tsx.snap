@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message> snapshot type my 1`] = `
+<div>
+  <div
+    class="message my"
+  >
+    <div
+      class="bubble"
+    >
+      <p
+        class="text"
+      >
+        Hello!
+      </p>
+      <time
+        class="time"
+        datetime="2022-11-14 12:20"
+      >
+        12:20
+      </time>
+    </div>
+    <span
+      class="spacer"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Message> snapshot type other 1`] = `
+<div>
+  <div
+    class="message other"
+  >
+    <div
+      class="bubble"
+    >
+      <span
+        class="name"
+      >
+        Fyodor Dostoevsky
+      </span>
+      <p
+        class="text"
+      >
+        Hello!
+      </p>
+      <time
+        class="time"
+        datetime="2022-11-14 12:20"
+      >
+        12:20
+      </time>
+    </div>
+    <span
+      class="spacer"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Message> snapshot type service 1`] = `
+<div>
+  <div
+    class="serviceMessage"
+  >
+    <span
+      class="name"
+    >
+      Fyodor Dostoevsky
+       
+    </span>
+    left the room.
+  </div>
+</div>
+`;
