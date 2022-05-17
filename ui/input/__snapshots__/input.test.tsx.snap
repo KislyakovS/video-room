@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input> snapshot default state 1`] = `
+exports[`<Input> snapshot 1`] = `
 <div>
   <div
     class="wrapper"
@@ -13,7 +13,7 @@ exports[`<Input> snapshot default state 1`] = `
 </div>
 `;
 
-exports[`<Input> snapshot error state 1`] = `
+exports[`<Input> snapshot error message 1`] = `
 <div>
   <div
     class="wrapper"
@@ -26,6 +26,25 @@ exports[`<Input> snapshot error state 1`] = `
     >
       Field is not valid
     </span>
+  </div>
+</div>
+`;
+
+exports[`<Input> snapshot right side element 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <input
+      class="input indentRight"
+    />
+    <div
+      class="endAdornment"
+    >
+      <div>
+        Right Side Element
+      </div>
+    </div>
   </div>
 </div>
 `;

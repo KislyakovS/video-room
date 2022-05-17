@@ -16,12 +16,12 @@ describe('<InputPassword>', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should when clicking on the show password button', async () => {
+    it('it follows that when you click on the buttons, the type `input` should become text', async () => {
         const user = userEvent.setup();
 
-        const { container } = render(<InputPassword />);
+        const { container, getByRole } = render(<InputPassword />);
         const input = container.querySelector('input')!;
-        const button = container.querySelector('button')!;
+        const button = getByRole('button');
 
         await user.click(button);
 
