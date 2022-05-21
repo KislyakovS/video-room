@@ -6,11 +6,11 @@ import LogoProps from './logo.type';
 
 import logo from './logo.png';
 
-const Logo: FC<LogoProps> = ({ className, href, width = 35 }) => {
+const Logo: FC<LogoProps> = ({ className, href, width = 35, height = 42 }) => {
     const image = <Image
         src={logo}
         width={width}
-        height={width * 1.2}
+        height={height}
         alt="Orange logo video room"
     />;
 
