@@ -1,12 +1,8 @@
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 
-type DefaultProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+import { MessageType } from '@types';
 
-export enum MessageType {
-    my,
-    other,
-    service,
-}
+type DefaultProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
 
 export default interface MessageProps extends DefaultProps {
     type: MessageType,

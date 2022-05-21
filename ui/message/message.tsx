@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 
-import MessageProps, { MessageType } from './message.type';
+import MessageProps from './message.type';
+import { MessageType } from '@types';
 
 import styles from './message.module.css';
 
