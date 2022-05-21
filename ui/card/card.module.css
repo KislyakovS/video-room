@@ -5,6 +5,7 @@
 .poster {
     position: relative;
 
+    height: 155px;
     margin-bottom: 5px;
 
     border-radius: var(--border-radius);
