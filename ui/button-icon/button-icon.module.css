@@ -10,6 +10,7 @@
 
     background-color: transparent;
     border: none;
+    outline: none;
 
     cursor: pointer;
     transition: opacity var(--transition-time) var(--transition-timing);
@@ -17,11 +18,11 @@
 
 .button:hover svg,
 .button:focus-visible svg {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .button:active {
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 .button svg {
