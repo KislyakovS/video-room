@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 
 import Message from './message';
-import { MessageType } from './message.type';
+import { MessageType } from '@types';
 
 describe('<Message>', () => {
     it('snapshot type my', () => {

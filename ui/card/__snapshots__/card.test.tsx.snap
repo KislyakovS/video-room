@@ -10,6 +10,8 @@ exports[`<Card> snapshot 1`] = `
     >
       <img
         alt="Movie poster - Зеленая миля"
+        decoding="async"
+        loading="lazy"
         src="http://poster.com"
       />
       <span

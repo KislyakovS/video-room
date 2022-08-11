@@ -7,7 +7,7 @@ import { MessageType } from '@types';
 
 import styles from './chat.module.css';
 
-const chats = [
+const messages = [
     {
         id: Math.random(),
         type: MessageType.other,
@@ -121,7 +121,7 @@ const chats = [
 const Chat: FC = () => {
     return <div className={styles.wrapper}>
         <ol className={styles.messages}>
-            {chats.map(message => (
+            {messages.map(message => (
                 <li key={message.id}>
                     <Message
                         type={message.type}
